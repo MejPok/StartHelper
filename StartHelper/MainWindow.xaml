@@ -5,8 +5,51 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StartHelper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Start Manager" Height="450" Width="400" Background="#FF1D1D1D">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Start manager" FontSize="30" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" Foreground="WhiteSmoke"/>
+        <Label Grid.Row="0" Grid.Column="1" VerticalAlignment="Bottom" Content="Kill" Foreground="AntiqueWhite" HorizontalAlignment="Center" FontSize="15"/>
+        <Label Grid.Row="0" Grid.Column="2" VerticalAlignment="Bottom" Content="Start" Foreground="AntiqueWhite" HorizontalAlignment="Center" FontSize="15"/>
+
+
+        <Button Grid.Row="1" Content="/" FontSize="20" Click="Button_Click" Margin="10" Background="#FFDDDDDD"/>
+
+
+        <Button Grid.Row="2" Grid.Column="2" FontSize="20" Click="Button_Click" Margin="10" Background="Transparent">
+            <Image Source="pack://application:,,,/StartHelper;component/Images/vis.png" Stretch="Uniform"/>
+        </Button>
+        
+        <Button Grid.Row="1" Grid.Column="3" FontSize="20" Click="Button_Click" Margin="10" Background="Transparent">
+            <Image Source="pack://application:,,,/StartHelper;component/Images/spotPng.png" Stretch="Uniform"/>
+        </Button>
+
+        <Button Grid.Row="1" Grid.Column="1" FontSize="20" Click="Button_Click" Margin="10" Background="Transparent">
+            <Image Source="pack://application:,,,/StartHelper;component/Images/overPng.png" Stretch="Uniform"/>
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="1"  FontSize="20" Click="Button_Click" Margin="10" Background="Transparent">
+            <Image Source="pack://application:,,,/StartHelper;component/Images/riotPng.png" Stretch="Uniform"/>
+        </Button>
+
+        <Button Grid.Row="3" Grid.Column="2" FontSize="20" Click="Button_Click" Margin="10" Background="Transparent">
+            <Image Source="pack://application:,,,/StartHelper;component/Images/overPng.png" Stretch="Uniform"/>
+        </Button>
+
+        <Button Grid.Row="1" Grid.Column="2" FontSize="20" Click="Button_Click" Margin="10" Background="Transparent">
+            <Image Source="pack://application:,,,/StartHelper;component/Images/github.png" Stretch="Uniform"/>
+        </Button>
 
     </Grid>
 </Window>
